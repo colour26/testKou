@@ -18,7 +18,7 @@ echo 2 > $tmp-ans2
 diff $tmp-ans2 $tmp-out2 || ERROR_EXIT "TEST1-4"
 
 echo 1 > $tmp-ans3
-./divisor.bash 123456 2 > $tmp-out3 || ERROR_EXIT "TEST1-5"
+./divisor.bash 1234567 2 > $tmp-out3 || ERROR_EXIT "TEST1-5"
 diff $tmp-ans3 $tmp-out3 || ERROR_EXIT "TEST1-6"
 
 echo OK
