@@ -9,8 +9,8 @@ ERROR_EXIT () {
 }
 
 
-echo aaa bbb NG > $tmp-ans
-./same.py aaa bbb > $tmp-out || ERROR_EXIT "TEST1-1"
+echo 84 273 21 > $tmp-ans
+./divisor.bash 84 273 > $tmp-out || ERROR_EXIT "TEST1-1"
 diff $tmp-ans $tmp-out || ERROR_EXIT "TEST1-2"
 
 echo OK
